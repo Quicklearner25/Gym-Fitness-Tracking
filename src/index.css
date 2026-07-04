@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+/* Base color adjustments */
+:root {
+  color-scheme: dark;
+}
+
+/* Light Theme Variables & Utility Classes Overrides */
+.light {
+  color-scheme: light;
+  
+  /* Core Tailwind v4 variable overrides */
+  --color-zinc-950: #ffffff !important;
+  --color-zinc-900: #f4f4f5 !important;
+  --color-zinc-800: #e4e4e7 !important;
+  --color-zinc-700: #d4d4d8 !important;
+  --color-zinc-600: #71717a !important;
+  --color-zinc-500: #52525b !important;
+  --color-zinc-400: #3f3f46 !important;
+  --color-zinc-300: #27272a !important;
+  --color-zinc-200: #18181b !important;
+  --color-zinc-100: #09090b !important;
+  --color-zinc-50: #f9f9f9 !important;
+  --color-black: #ffffff !important;
+  --color-white: #09090b !important;
+  
+  background-color: #fcfcfc !important;
+  color: #09090b !important;
+}
+
+/* Specific class level overrides to ensure flawless rendering across different nested layouts */
+.light .bg-zinc-950 {
+  background-color: #ffffff !important;
+}
+
+.light .bg-zinc-900 {
+  background-color: #f4f4f5 !important;
+}
+
+.light .bg-zinc-900\/50 {
+  background-color: rgba(244, 244, 245, 0.5) !important;
+}
+
+.light .bg-zinc-900\/60 {
+  background-color: rgba(244, 244, 245, 0.6) !important;
+}
+
+.light .bg-black {
+  background-color: #ffffff !important;
+}
+
+.light .bg-black\/80 {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.light .border-zinc-900 {
+  border-color: #e4e4e7 !important;
+}
+
+.light .border-zinc-800 {
+  border-color: #e4e4e7 !important;
+}
+
+.light .text-white {
+  color: #09090b !important;
+}
+
+.light .text-zinc-100 {
+  color: #18181b !important;
+}
+
+.light .text-zinc-200 {
+  color: #27272a !important;
+}
+
+.light .text-zinc-300 {
+  color: #3f3f46 !important;
+}
+
+.light .text-zinc-400 {
+  color: #52525b !important;
+}
+
+.light .text-zinc-500 {
+  color: #71717a !important;
+}
+
+/* Keep the gold color glowing elegantly but fully legible in light mode */
+.light .text-amber-500 {
+  color: #d97706 !important; /* Elegant dark gold/amber for high contrast */
+}
+
+.light .bg-amber-500 {
+  background-color: #f59e0b !important;
+  color: #000000 !important;
+}
+
+.light .bg-amber-500\/10 {
+  background-color: rgba(245, 158, 11, 0.1) !important;
+}
+
+.light .border-amber-500\/20 {
+  border-color: rgba(245, 158, 11, 0.25) !important;
+}
+
+.light .border-amber-500\/30 {
+  border-color: rgba(245, 158, 11, 0.35) !important;
+}
+
+/* Input elements inside forms in light mode */
+.light input, .light select, .light textarea {
+  background-color: #ffffff !important;
+  border-color: #d4d4d8 !important;
+  color: #09090b !important;
+}
+
+.light input::placeholder, .light textarea::placeholder {
+  color: #a1a1aa !important;
+}
+
+/* Ensure timeline and other custom borders render correctly */
+.light .border-l {
+  border-left-color: #e4e4e7 !important;
+}
+
+/* Keep specific text elements black when they are on an amber badge */
+.light .bg-amber-500 .text-black, .light button.bg-amber-500 {
+  color: #000000 !important;
+}

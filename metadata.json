@@ -1,0 +1,10 @@
+{
+  "name": "Remix: RS Fitness",
+  "description": "A premium, professional gym management application featuring member tracking, attendance logging, fee management, and a beautiful gold-accented theme.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
